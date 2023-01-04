@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@layer base {
+    html {
+      font-family: Ubuntu, system-ui, sans-serif;
+    }
+  }
+
+@layer components {
+    #country-code:hover > #digit {
+        display: inline-block;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transform-style: preserve-3d;
+    }
+    #country-code:hover > #digit.plus {
+        transform: translate3d(-0.8em, -0.6em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-29deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.code-1 {
+        transform: translate3d(-0.2em, -0.4em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.code-2 {
+        transform: translate3d(-0.05em, 0.1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(12deg) skew(0deg, 0deg);
+    }
+    
+    #country-code:hover > #digit.phone-1 {
+        transform: translate3d(-0.05em, -0.1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-9deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.phone-2 {
+        transform: translate3d(-0.1em, 0.55em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(3deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.phone-3 {
+        transform: translate3d(0em, -0.1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(9deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.phone-4 {
+        transform: translate3d(0em, 0.15em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-12deg) skew(0deg, 0deg);
+    }
+
+    #country-code:hover > #digit.phone-5 {
+        transform: translate3d(0em, 0.15em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-17deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.phone-6 {
+        transform: translate3d(0em, -0.65em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(9deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.phone-7 {
+        transform: translate3d(0.1em, 0.4em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(12deg) skew(0deg, 0deg);
+    }
+
+    #country-code:hover > #digit.phone-8 {
+        transform: translate3d(0em, -0.15em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-9deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.phone-9 {
+        transform: translate3d(0.2em, 0.15em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(12deg) skew(0deg, 0deg);
+    }
+    #country-code:hover > #digit.phone-10 {
+        transform: translate3d(0.8em, 0.6em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(20deg) skew(0deg, 0deg);
+    }
+}

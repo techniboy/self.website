@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <div className="flex justify-center items-center bg-black text-[#f5f4ee] h-screen selection:bg-[#D9FF00] selection:text-black">
       <IntroTextWrapper />
     </div>
   )
